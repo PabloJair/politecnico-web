@@ -61,11 +61,11 @@ export class CarouselComponent {
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
-    dots: false,
-    navSpeed: 700,
-    nav: false,
+    dots: true,
+    navSpeed: 100,
+    autoplay:true,
 
-    navText: ['<<', '>>'],
+    nav: false,
     center: true,
     responsive: {
       0: {

@@ -1,24 +1,24 @@
-<div class="h-screen flex justify-center items-center p-5 overflow-hidden .">
-  <div class="border-amber-400 border-2 rounded-xl h-full w-96  overflow-auto justify-between  p-1">
-    <div class="flex flex-row w-full h-28  mt-1 justify-around items-center">
-      <img class="h-30 w-40  object-scale-down " src="img_1.png" alt="politecnico logo">
-      <img class="h-full max-w-25 object-scale-down " src="img_2.png" alt="politecnico logo">
-      <img class="h-full max-w-25 object-scale-down " src="img_3.png" alt="politecnico logo">
+<div class="h-screen flex justify-center items-center p-5 ">
+  <div class="border-amber-400 border-2 rounded-xl h-full w-96 overflow-scroll flex flex-col p-1">
+    @if (showSecondMenu){
+      <button mat-icon-button aria-label="Example icon button with a vertical three dot icon" (click)="showSecondMenu = false">
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+    }
+    <div class="flex flex-row w-full h-28 mt-1 justify-around items-center">
+      <img class="h-30 w-40 object-scale-down" src="img_1.png" alt="politecnico logo">
+      <img class="h-full max-w-25 object-scale-down" src="img_2.png" alt="politecnico logo">
+      <img class="h-full max-w-25 object-scale-down" src="img_3.png" alt="politecnico logo">
     </div>
 
+    @if (!showSecondMenu){
+      <app-menu-one (onClickSecondMenu)="showSecondMenu = true"></app-menu-one>
+    } @else {
+      <app-menu-second></app-menu-second>
+    }
 
-    <app-menu-one></app-menu-one>
-
-    <div class="flex flex-col">
-      <img class="h-full " src="img_4.png" alt="politecnico logo">
-    </div>
-
-    <div class="flex gap-2 px-1 py-1  h-14 ">
-      <div class=" w-full   flex items-center justify-center  bg-gray-300 rounded-md">Ayuda y soporte</div>
-      <div class=" w-full   flex items-center justify-center bg-gray-300 rounded-md ">Continuar la llamada</div>
-    </div>
     <app-carousel class="h-auto"></app-carousel>
 
-    <span class="text-sm text-center w-full "> Powered by S10 Plus 2024 - All Rigth Reserved</span>
+    <span class="text-sm text-center w-full mt-auto">Powered by S10 Plus 2024 - All Rights Reserved</span>
   </div>
 </div>

@@ -1,14 +1,22 @@
 <div class="flex flex-col  justify-evenly ">
   <div class="grid  grid-cols-2 gap-2 px-1 py-1  h-42">
-    <button class=" w-full  h-14 flex items-center justify-center  bg-gray-300 rounded-md">Comunidad</button>
+    <a matRipple class=" w-full  h-14 flex items-center justify-center  bg-gray-300 rounded-md cursor-pointer" (click)="onClickSecondMenu.emit()">Comunidad</a>
     <div class=" w-full  flex items-center justify-center  rounded-md row-span-2">
       <img class="h-full max-w-28 object-contain mx-2" src="img_5.png" alt="politecnico logo">
 
     </div>
-    <button class=" w-full  h-14 flex items-center justify-center bg-gray-300 rounded-md">Posgrado</button>
-    <button class=" w-full  h-14 flex items-center justify-center bg-gray-300 rounded-md">Vinculación</button>
-    <button class=" w-full  h-14 flex items-center justify-center bg-gray-300 rounded-md">Oferta educativa</button>
+    <a matRipple class=" w-full  h-14 flex items-center justify-center bg-gray-300 rounded-md" href="https://www.ipn.mx/posgrado/conocenos/directorio-centros.html" target="_blank">Posgrado</a>
+    <a matRipple class=" w-full  h-14 flex items-center justify-center bg-gray-300 rounded-md" href="https://admision.ipn.mx/portal/index.html" target="_blank">Vinculación</a>
+    <a matRipple class=" w-full  h-14 flex items-center justify-center bg-gray-300 rounded-md" href="https://www.ipn.mx/dsett/" target="_blank">Oferta educativa</a>
   </div>
 
 
+</div>
+<a class="flex flex-col" href="https://www.google.com/maps/search/politecnico/@19.5192016,-99.3117187,64767m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MTAxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+  <img class="h-full " src="img_4.png" alt="politecnico logo">
+</a>
+
+<div class="flex gap-2 px-1 py-1  h-14 ">
+  <a matRipple class=" w-full   flex items-center justify-center  bg-gray-300 rounded-md"  href="https://cari.ai/cVhlaTdqekZaZkkyL1VZUDc4QjdZMFI0b2hkLzVVMXhmM0xsaDNxWmVScmxQdGNUVWlNcExPVnlsdDNDb2podzFyWEFyblpaWmJmeQ==@em@" target="_blank">Ayuda y soporte</a>
+  <a matRipple class=" w-full   flex items-center justify-center bg-gray-300 rounded-md" href="tel:+1234567890">Continuar la llamada</a>
 </div>
